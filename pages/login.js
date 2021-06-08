@@ -1,7 +1,7 @@
 import {useContext, useState} from 'react'
 import {Button, Container, FormLabel, TextField} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
-import {UserContext} from '../context/UserContext'
+import { useRouter } from 'next/router'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 const Login = () => {
     // const [userID, setID] = useContext(UserContext);
     const classes = useStyles();
+    const router = useRouter();
     const [input, setInput] = useState({
         username: "", 
         password: ""
@@ -59,6 +60,7 @@ const Login = () => {
                 </div>
                 <div style={{margin: "20px 0"}}>
                     <Button variant="contained" color="primary" onClick={handleSubmit}>Login</Button>
+                    <Button style={{margin: "10px"}} variant="contained" color="primary" onClick={() => router.back()}>Back to Home</Button>                
                 </div>
             </form>
         </Container>
