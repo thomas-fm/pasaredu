@@ -1,10 +1,16 @@
+import Head from 'next/head'
 import {TextField} from '@material-ui/core'
 
 export default function Home() {
   return (
     <>
     <div>
-        <div className="container mx-20 md:mx-20 md:w-full flex items-center border-b-4 border-gray-80">
+        <Head>
+          <title>Pasaredu</title>
+          <link rel="icon" href="/pasaredu-logo.png" />
+        </Head>
+        
+        <nav className="container mx-20 md:mx-20 md:w-full flex items-center border-b-4 border-gray-80">
           <div className="md:w-8/12 w-8/12 h-auto flex">
             <img
               src="/pasaredu-logo.png"
@@ -24,7 +30,7 @@ export default function Home() {
               Jadi Tutor
             </button>
           </div>
-        </div>
+        </nav>
       </div>
 
       <div className="md:w-full">
