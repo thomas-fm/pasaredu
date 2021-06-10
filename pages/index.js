@@ -1,66 +1,151 @@
-import Head from 'next/head'
 import {TextField} from '@material-ui/core'
 
 export default function Home() {
   return (
     <>
-      <nav className="lg:w-full w-full h-20 flex items-center border-b-4 border-gray-80">
-        <div className="w-30 h-30 flex mx-40 lg:w-full">
-          <img
-            src="/pasaredu-logo.png"
-            alt="Logo Pasaredu"
-            className="w-auto h-auto px-2"
-          ></img>
-        </div>
-        <div className="flex items-center w-full mx-40">
-          <div className="relative mx-58"></div>  
-          <div className="relative mx-20"></div> 
-          <div className="relative mx-5"></div> 
-          <div className="relative mx-10">
-            <a href="/login" className="text-black-100 font-bold shadow"> LOGIN </a>
-          </div>
-          <div className="relative mx-5">
-            <a href="#" className="text-black-100 font-bold shadow"> SIGN UP </a>
-          </div>
-        </div>
-
-        <div className="flex items-center w-20 h-20 py-5 lg:w-4/12">
-          <button className="border-4 border-yellow-400 px-2 py-1 font-bold">
-            JADI TUTOR
-          </button>
-        </div>
-      </nav>
-
-      <body>
-        <div className="relative">
-          <div className="absolute inset-0 z-0">
+    <div>
+        <div className="container mx-auto flex items-center border-b-4 border-gray-80">
+          <div className="w-8/12 h-auto flex">
             <img
-              src="/bg-home.png"
-              alt="Background Home Pasaredu"
-              className="w-full h-auto"
+              src="/pasaredu-logo.png"
+              alt="Logo Pasaredu"
             ></img>
-          </div>
-          <div className="absolute inset-0 z-10">
-            <div className="flex flex-col transform scale-75 space-y-4">
-              <div className="text-white text-6xl text-center my-40 font-black">Selamat Datang di Pasaredu!
-                <p className="text-white text-4xl text-center font-semibold"><br></br>Pasar daring yang memfasilitasi berbagai layanan</p>
-                <p className="text-white text-4xl text-center font-semibold">edukasi dengan menghubungkan tutor dan murid</p>
-                <p className="text-white text-4xl text-center font-semibold">di seluruh Indonesia</p>
-              </div>
 
-              <div className="items-center" style={{background: "white", border: "1px solid", margin: "10px", alignContent: "center"}}>
-                  <div style={{margin :"10px 0", alignItems : "center", paddingLeft : "10px"}}>
-                      <TextField
-                          id="filled-required"
-                          placeholder="Masukkan Kategori"
-                      />
-                  </div>
-              </div>
+          </div>
+          <div className="w-3/12">
+            <ul className="flex space-x-20">
+              <li><a href="/login" className="font-bold tracking-widest uppercase shadow">Login</a></li>
+              <li><a href="#" className="font-bold tracking-widest uppercase shadow">Sign Up</a></li>
+            </ul>
+          </div>
+          
+          <div className="flex items-center w-1/12 -mx-20">
+            <button className="border-4 border-yellow-400 px-2 font-bold uppercase">
+              Jadi Tutor
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="bg-pasaredu"> 
+          <div className="flex flex-col transform scale-90">
+            <h1 className="text-white font-montserrat text-6xl text-center my-40 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
+            <p className="text-white text-4xl -my-20 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
+            <p className="text-white text-4xl my-20 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
+            <p className="text-white text-4xl -my-20 text-center font-semibold tracking-widest">di seluruh Indonesia</p><br></br><br></br><br></br><br></br><br></br>
+
+            <div className="items-center mx-60" style={{background: "white", border: "1px solid", margin: "center", marginTop: "20px", borderRadius: "25px", maxWidth: "1496px", padding: "5px"}}>
+                <div style={{margin :"center", alignItems : "center", paddingLeft : "10px"}}>
+                    <TextField
+                        id="filled-required"
+                        placeholder="Masukkan Kategori..."
+                    />
+                </div>
             </div>
           </div>
+        </div>   
+      </div>
+
+      <div className="relative items-center">
+        <div className="text-center my-20 tracking-widest font-normal text-black uppercase text-3xl">
+            Pilihan Kategori
         </div>
-            
-      </body>
+        <div>
+          <ul className="mx-60 flex space-x-10">
+            <li>
+              <button className="px-20 py-10 border-b-8 shadow border-yellow-400 font-semibold rounded-2xl">
+                <img src="/math.png"/>
+                Matematika
+              </button>
+            </li>
+            <li>
+              <button className="my-3 px-20 py-10 border-b-8 shadow border-yellow-400 font-semibold rounded-2xl">
+                <img src="/fisika.png"/>
+                Fisika
+              </button>
+            </li>
+            <li>
+              <button className="my-1 px-20 py-10 border-b-8 shadow border-yellow-400 font-semibold rounded-2xl">
+                <img src="/computer.png"/>
+                Komputer
+              </button>
+            </li>
+            <li>
+              <button className="my-4 px-20 py-10 border-b-8 shadow border-yellow-400 font-semibold rounded-2xl">
+                <img src="/lang.png"/>
+                Bahasa Asing
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <img src="/benefit.png" className="my-40"/>
+
+      <div className="w-full bg-yellow-400 h-[200px] -my-20 flex">
+        <div className="flex items-center bg-yellow-400">
+          <div className="mx-40 my-20 h-auto flex">
+            <img
+              src="/pasaredu-logo.png"
+              alt="Logo Pasaredu"
+            ></img>
+          </div>
+        </div>
+        <div>
+          <ul className="flex space-x-60">
+            <li>
+              <h1 className="font-bold my-10">Kategori jenjang pendidikan</h1>
+              <ul className="-my-5 flex space-x-10">
+                <li>
+                  <a href="#" className="font-normal text-md">SD</a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal text-md">SMA</a>
+                </li>
+              </ul>
+              <ul className="my-8 space-x-7 flex">
+                <li>
+                  <a href="#" className="font-normal text-md">SMP</a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal text-md">UMUM</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h1 className="font-bold my-10">Contact</h1>
+              <ul className="-my-5">
+                <li>
+                  <p>+62 81234579309</p>
+                  <p className="my-2">pasaredu@gmail.com</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h1 className="font-bold my-10">Follow us</h1>
+              <ul className="flex space-x-5 -my-5">
+                <li>
+                  <a href="#" >
+                    <img src="/twitter.png"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" >
+                    <img src="/facebook.png"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" >
+                    <img src="/instagram.png"/>
+                  </a>
+                </li>
+              </ul>
+              <img src="/indo.png" className="my-10"/>
+            </li>
+          </ul>
+        </div>
+      </div>
     </>
   )
 }

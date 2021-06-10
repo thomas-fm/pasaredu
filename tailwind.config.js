@@ -1,12 +1,31 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'montserrat-alternates' : ['Montserrat Alternates']
+      }
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addUtilities}) {
+      const utilities = {
+        ".bg-pasaredu" : {
+          "background-image" : "url(/bg-home.png)"
+        },
+        ".bg-benefit" : {
+          "background-image" : "url(/benefit.png)"
+        }
+      };
+      addUtilities(utilities);
+    })
+  ],
 }
