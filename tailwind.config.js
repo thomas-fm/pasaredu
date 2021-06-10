@@ -22,7 +22,8 @@ module.exports = {
           "background-image" : "url(/bg-home.png)"
         },
         ".bg-benefit" : {
-          "background-image" : "url(/benefit.png)"
+          "background-image" : "url(/benefit.png)",
+          "background-size" : "100%"
         }
       };
       addUtilities(utilities);
