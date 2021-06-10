@@ -19,7 +19,8 @@ module.exports = {
     plugin(function({addUtilities}) {
       const utilities = {
         ".bg-pasaredu" : {
-          "background-image" : "url(/bg-home.png)"
+          "background-image" : "url(/bg-home.png)",
+          "background-size" : "100%"
         },
         ".bg-benefit" : {
           "background-image" : "url(/benefit.png)",

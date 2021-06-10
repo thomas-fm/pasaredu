@@ -36,12 +36,12 @@ export default function Home() {
       <div>
         <div className="bg-pasaredu"> 
           <div className="flex flex-col transform scale-90">
-            <h1 className="text-white font-montserrat text-6xl text-center my-40 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
-            <p className="text-white text-4xl -my-20 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
-            <p className="text-white text-4xl my-20 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
-            <p className="text-white text-4xl -my-20 text-center font-semibold tracking-widest">di seluruh Indonesia</p><br></br><br></br><br></br><br></br><br></br>
+            <h1 className="text-white font-montserrat md:text-4xl 2xl:text-6xl text-center md:my-20 my-40 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
+            <p className="text-white md:text-2xl 2xl:text-4xl -my-20 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
+            <p className="text-white md:text-2xl 2xl:text-4xl my-20 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
+            <p className="text-white md:text-2xl 2xl:text-4xl -my-20 text-center font-semibold tracking-widest">di seluruh Indonesia</p><br></br><br></br><br></br><br></br><br></br>
 
-            <div className="items-center 2xl:mx-60" style={{background: "white", border: "1px solid", margin: "center", marginTop: "20px", borderRadius: "25px", maxWidth: "1496px", padding: "5px"}}>
+            <div className="items-center 2xl:mx-60 md:mx-40" style={{background: "white", border: "1px solid", margin: "center", marginTop: "20px", borderRadius: "25px", maxWidth: "1496px", padding: "5px"}}>
                 <div style={{margin :"center", alignItems : "center", paddingLeft : "10px"}}>
                     <TextField
                         id="filled-required"
@@ -99,10 +99,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="2xl:my-40 2xl:w-full 2xl:h-[100px] md:w-[1180px] md:h-[100px]">
-        <div className="items-center bg-yellow-400 md:h-[325px] 2xl:h-[375px] flex">
+      <div className="2xl:my-40 2xl:w-full 2xl:h-[100px] md:w-[1180px] md:h-[200px]">
+        <div className="items-center bg-yellow-400 md:h-[365px] 2xl:h-[375px] flex">
           <div className="items-center bg-yellow-400">
-            <div className="2xl:mx-40 2xl:my-20 md:mx-40 md:my-[120px] flex ">
+            <div className="2xl:mx-40 2xl:my-20 md:mx-40 md:my-20 flex ">
               <img
                 src="/pasaredu-logo.png"
                 alt="Logo Pasaredu"
