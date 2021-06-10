@@ -4,22 +4,22 @@ export default function Home() {
   return (
     <>
     <div>
-        <div className="container mx-auto flex items-center border-b-4 border-gray-80">
-          <div className="w-8/12 h-auto flex">
+        <div className="container mx-20 md:mx-20 md:w-full flex items-center border-b-4 border-gray-80">
+          <div className="md:w-8/12 w-8/12 h-auto flex">
             <img
               src="/pasaredu-logo.png"
               alt="Logo Pasaredu"
             ></img>
 
           </div>
-          <div className="w-3/12">
-            <ul className="flex space-x-20">
+          <div className="md:w-3/12 w-3/12">
+            <ul className="md:flex flex space-x-20">
               <li><a href="/login" className="font-bold tracking-widest uppercase shadow">Login</a></li>
               <li><a href="#" className="font-bold tracking-widest uppercase shadow">Sign Up</a></li>
             </ul>
           </div>
           
-          <div className="flex items-center w-1/12 -mx-20">
+          <div className="md:flex flex items-center md:w-auto w-1/12">
             <button className="border-4 border-yellow-400 px-2 font-bold uppercase">
               Jadi Tutor
             </button>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="md:w-full">
         <div className="bg-pasaredu"> 
           <div className="flex flex-col transform scale-90">
             <h1 className="text-white font-montserrat text-6xl text-center my-40 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
@@ -80,10 +80,16 @@ export default function Home() {
           </ul>
         </div>
       </div>
+      
+      <div className="bg-benefit">
+        <div className="w-full h-[612px] my-40">
+          <button style={{marginLeft: "1330px", marginTop: "550px"}} className="py-2 px-4 bg-yellow-400 border-4 border-yellow-400">
+              <a href="#" className="font-bold uppercase ">Gabung jadi Tutor</a>
+              </button>
+        </div>
+      </div>
 
-      <img src="/benefit.png" className="my-40"/>
-
-      <div className="w-full bg-yellow-400 h-[200px] -my-20 flex">
+      <div className="w-full bg-yellow-400 h-[250px] -my-20 flex">
         <div className="flex items-center bg-yellow-400">
           <div className="mx-40 my-20 h-auto flex">
             <img
@@ -93,22 +99,22 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <ul className="flex space-x-60">
+          <ul className="flex space-x-60 space-y-10">
             <li>
-              <h1 className="font-bold my-10">Kategori jenjang pendidikan</h1>
+              <h1 className="font-bold my-20">Kategori jenjang pendidikan</h1>
               <ul className="-my-5 flex space-x-10">
-                <li>
+                <li className="-my-10">
                   <a href="#" className="font-normal text-md">SD</a>
                 </li>
-                <li>
+                <li className="-my-10">
                   <a href="#" className="font-normal text-md">SMA</a>
                 </li>
               </ul>
               <ul className="my-8 space-x-7 flex">
-                <li>
+                <li className="-my-5">
                   <a href="#" className="font-normal text-md">SMP</a>
                 </li>
-                <li>
+                <li className="-my-5">
                   <a href="#" className="font-normal text-md">UMUM</a>
                 </li>
               </ul>
