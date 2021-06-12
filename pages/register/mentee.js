@@ -12,14 +12,6 @@ const GoogleIcon = (props) => {
     )
 }
 
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#ffb300'
-        }
-    },
-});
-
 const RegisterMentee = () => {
     const router = useRouter();
     const [input, setInput] = useState({
@@ -32,6 +24,14 @@ const RegisterMentee = () => {
 
     },[input])
 
+    const theme = createMuiTheme({
+        palette: {
+            primary: {
+                main: '#ffb300'
+            }
+        },
+    });
+    
     const handleSubmit = (event) =>{
         // butuh backend
     }

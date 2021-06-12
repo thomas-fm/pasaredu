@@ -1,7 +1,9 @@
-import {useContext, useState} from 'react'
+import {useContext, useEffect, useState} from 'react'
 import {Button, Container, TextField, Icon} from '@material-ui/core'
 import {createMuiTheme, makeStyles, ThemeProvider} from '@material-ui/core/styles'
 import { useRouter } from 'next/router'
+
+import Navbar from '../src/layout/NavBar'
 
 const useStyles = makeStyles((theme) => ({
     margin: {
@@ -17,13 +19,6 @@ const GoogleIcon = (props) => {
     )
 }
 
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#ffb300'
-        }
-    },
-});
 const Login = () => {
     // const [userID, setID] = useContext(UserContext);
     const router = useRouter();
@@ -31,6 +26,20 @@ const Login = () => {
         username: "", 
         password: ""
     });
+
+    useEffect(() => {
+
+    }, 
+    [input])
+
+    const theme = createMuiTheme({
+        palette: {
+            primary: {
+                main: '#ffb300'
+            }
+        },
+    });
+
     const handleSubmit = (event) =>{
         // butuh backend
     }
@@ -41,6 +50,8 @@ const Login = () => {
         setInput({...input, [name]: value});
     }
     return (
+        <>
+        <Navbar/>
         <Container className="flex justify-center shadow-2xl" style={{background: "white", position: "fixed", top: "50%", left: "50%", flexDirection: "column", alignItems: "center", marginRight: "-50%", transform: "translate(-50%, -50%)"}} maxWidth="sm">
             <div className="flex flex-row justify-center">
             <form className="flex-col flex justify-center" noValidate autoComplete="off" style={{marginBottom: "10px"}}>
@@ -96,6 +107,7 @@ const Login = () => {
             </form>
             </div>
         </Container>
+        </>
     );
 }
 
