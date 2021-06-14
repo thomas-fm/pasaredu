@@ -10,22 +10,19 @@ export default function Home() {
         <main>
           <div>
             <div className="bg-pasaredu"> 
-              <div className="h-[125px] 2xl:h-full md:h-full 2xl:w-full md:w-full flex flex-col transform scale-75">
-                <h1 className="my-1 text-sm font-thin text-white font-montserrat md:text-4xl 2xl:text-6xl text-center md:my-20 2xl:my-40 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
-                <p className="text-xs text-white md:text-2xl 2xl:text-4xl 2xl:-my-20 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
-                <p className="text-xs text-white md:text-2xl 2xl:text-4xl 2xl:my-20 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
-                <p className="text-xs text-white md:text-2xl 2xl:text-4xl 2xl:-my-20 text-center font-semibold tracking-widest">di seluruh Indonesia</p>
+              <div className="h-[125px] 2xl:h-full md:h-full 2xl:w-full md:w-full flex flex-col" style={{transform: "none"}}>
+                <h1 className="my-1 text-sm font-thin text-white font-montserrat md:text-4xl 2xl:text-6xl text-center md:my-20 2xl:my-20 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
+                <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:-my-15 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
+                <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:my-0 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
+                <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:-my-0 text-center font-semibold tracking-widest">di seluruh Indonesia</p>
 
                 <div className="my-2 md:my-10 2xl:my-10"></div>
                 <div className="items-center p-0 mt-0 2xl:mt-[20px] md:mt-[20px] md:p-[5px] 2xl:p-[5px] mx-0 2xl:mx-60 md:mx-40" style={{background: "white", border: "1px solid", margin: "center", borderRadius: "25px", maxWidth: "1496px"}}>
                     <div style={{margin :"center", alignItems : "center", paddingLeft : "10px"}}>
-                        <TextField
-                            id="filled-required"
-                            placeholder="Masukkan Kategori..."
-                            style={{width: "98%"}}
-                        />
+                        <form><input placeholder="Masukkan Kategori" type="text" style={{width: "98%", outline: "none"}}></input></form>
                     </div>
                 </div>
+                <div className="my-2 md:my-10 2xl:my-10"></div>
               </div>
             </div>   
           </div>

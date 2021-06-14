@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer(){
     return (
         <>
-            <div className="my-20 h-[200px] 2xl:my-40 2xl:w-full 2xl:h-[100px] md:w-[1180px] md:h-[200px]">
+            <div className="my-20 h-[200px] 2xl:my-40 2xl:w-full 2xl:h-[200px] md:w-[1180px] md:h-[200px]">
                 <div className="items-center h-[300px] bg-yellow-400 md:h-[365px] 2xl:h-[375px] flex">
                     <div className="items-center bg-yellow-400">
                         <div className="w-6/12 2xl:mx-40 2xl:my-20 md:mx-40 md:my-20 flex">
