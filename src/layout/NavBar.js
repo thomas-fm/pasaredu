@@ -8,7 +8,7 @@ export default function NavBar(){
                 <title>Pasaredu</title>
                 <link rel="icon" href="/pasaredu-logo.png"></link>
             </Head>
-            <div style={{position: "sticky", top: "0", backgroundColor: "white"}}>
+            <div className="border-2" style={{position: "sticky", top: "0", backgroundColor: "white", borderBottomColor: "gray"}}>
                 <div className="flex items-center">
                     <div className="flex items-center w-full 2xl:w-full md:mx-40 2xl:mx-40 ">
                         <div>

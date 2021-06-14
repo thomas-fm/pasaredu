@@ -34,7 +34,7 @@ export default function Home() {
               <ul className="space-x-4 md:mx-5 md:w-full md:space-x-10 2xl:-mx-5 flex 2xl:space-x-10" style={{justifyContent: "center"}}>
                 <li>
                   <button className="-mx-2 px-3 md:px-10 md:py-10 2xl:px-20 2xl:py-10 border-b-8 shadow border-yellow-400 font-semibold rounded-2xl">
-                    <a href="#" className="text-xs 2xl:text-base md:text-base"><img src="/math.png" className="mx-2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"/>Matematika</a>
+                    <a href="/infotutor" className="text-xs 2xl:text-base md:text-base"><img src="/math.png" className="mx-2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[100px] 2xl:h-[100px]"/>Matematika</a>
                   </button>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ export default function Home() {
               <div className="flex md:flex 2xl:flex">
                 <div className="p-0 mx-[120px] my-[160px] md:flex 2xl:flex md:mx-[830px] md:my-[370px] 2xl:mx-[1280px] 2xl:my-[550px]">
                   <button className="p-0 w-[150px] md:w-[250px] md:px-2 md:py-1 2xl:py-2 2xl:px-4 bg-yellow-400 border-4 border-yellow-400">
-                      <a href="#" className="text-xs font-semibold 2xl:text-base md:text-base 2xl:font-bold md:font-bold uppercase ">Gabung jadi Tutor</a>
+                      <a href="/register/tutor" className="text-xs font-semibold 2xl:text-base md:text-base 2xl:font-bold md:font-bold uppercase ">Gabung jadi Tutor</a>
                   </button>
                 </div>
               </div>
