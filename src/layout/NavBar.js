@@ -1,5 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
+// import '../../styles/style.css'
+
+// .container {
+//     min-height: 100vh;
+//     padding: 0 0.5rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//   }
 
 const NavBar = () => {
     return (
@@ -22,6 +33,7 @@ const NavBar = () => {
                     <ul className="space-x-3 flex md:flex 2xl:flex 2xl:space-x-20">
                     <li><a href="/login" className="mx-6 text-xs 2xl:text-base font-bold tracking-widest uppercase shadow">Login</a></li>
                     <li><a href="/register/mentee" className="text-xs 2xl:text-base font-bold tracking-widest uppercase shadow">Sign Up</a></li>
+                    <li><a href="/katalog" className="text-xs 2xl:text-base font-bold tracking-widest uppercase shadow">Tutor</a></li>
                     </ul>
                 </div>
                 

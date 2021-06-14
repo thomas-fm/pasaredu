@@ -4,6 +4,8 @@ import {Button, Container, TextField, Icon} from '@material-ui/core'
 import {createMuiTheme, makeStyles, ThemeProvider} from '@material-ui/core/styles'
 import { useRouter } from 'next/router'
 
+import NavBar from '../../src/layout/NavBar'
+
 const GoogleIcon = (props) => {
     return (
     <Icon {...props}>
@@ -31,7 +33,7 @@ const RegisterMentee = () => {
             }
         },
     });
-    
+
     const handleSubmit = (event) =>{
         // butuh backend
     }
@@ -54,6 +56,8 @@ const RegisterMentee = () => {
     function changeValue(e, type) {
     }
     return (
+        <>
+        <NavBar/>
         <Container className="flex justify-center shadow-2xl" style={{background: "white", position: "fixed", top: "50%", left: "50%", flexDirection: "column", alignItems: "center", marginRight: "-50%", transform: "translate(-50%, -50%)"}} maxWidth="sm">
             <div className="flex flex-row justify-center">
             <form className="flex-col flex justify-center" noValidate autoComplete="off" style={{marginBottom: "10px"}}>
@@ -135,6 +139,7 @@ const RegisterMentee = () => {
             </form>
             </div>
         </Container>
+        </>
     );
 }
 

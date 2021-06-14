@@ -1,6 +1,8 @@
-import {Input, Form, Select, Divider, Space, Image, Button, Checkbox, Upload} from 'antd'
+import {Input, Form, Select, Layout, Space, Image, Button, Checkbox, Upload} from 'antd'
 import { PlusOutlined } from '@ant-design/icons';
 import React, { useEffect, useState } from 'react'
+
+import NavBar from '../../src/layout/NavBar'
 
 const RegisterTutor = () => {
     const layout = {
@@ -13,6 +15,7 @@ const RegisterTutor = () => {
     };
     const [form] = Form.useForm();
     const {Option} = Select;
+    const {Content} = Layout;
     const [input, setInput] = useState({
         fullname: "",
         email: "",
@@ -63,17 +66,20 @@ const RegisterTutor = () => {
     }
     return (
         <>
+        <Layout>
+        <NavBar/>
+        <Content style={{background: "white"}}>
         <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap"}}>
             <img src="/pasaredu-logo.png"/>
             <h1 style={{fontSize: "1.6rem"}}>Welcome to Pasaredu!</h1>
         </div>
-        <div style={{display: "flex", justifyContent: "center", width: "100%", padding: "10px"}}>
+        <div style={{display: "flex", justifyContent: "center", width: "100%", padding: "10px"}} className="tutor-register">
             <Form {...layout}
                 name="register-tutor"
                 onFinish={handleSubmit}
                 form={form}
             >
-            <div className="left-form" style={{width: "60ch", float: "left"}}>
+            <div className="formm" style={{float: "left"}}>
                 <div>
                 <label>Nama Lengkap</label>
                     <Form.Item
@@ -186,7 +192,7 @@ const RegisterTutor = () => {
                 </div>
             </div>
 
-            <div className="right-form" style={{width: "60ch", float: "right"}}>
+            <div className="formm" style={{float: "right"}}>
                 <div style={{justifyItem: "center", width: "100%"}}>
                     <Space size={12}>
                     <Image
@@ -231,6 +237,8 @@ const RegisterTutor = () => {
             </div>
             </Form>
         </div>
+        </Content>
+        </Layout>
         </>
     );
 }
