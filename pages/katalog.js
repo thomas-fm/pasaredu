@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Row, Col, Divider, Layout, Card, Input } from 'antd'
 import { Content } from 'antd/lib/layout/layout';
 import { EditOutlined } from 'antd/lib/icon'
+import Navbar from '../src/layout/NavBar.js'
 
 const {Meta} = Card;
 
@@ -83,12 +84,14 @@ const Katalog = () => {
 
     return (
     <>
-        <div>
+        <Navbar/>
+        <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
             <Input.Search
                 placeholder="Cari subjek"
                 required
                 allowClear
                 onSearch={handleSubmit}
+                style={{width: "60%"}}
             />
         </div>
         <Row gutter={[16, 32]} justify="center">

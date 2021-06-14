@@ -22,6 +22,7 @@ export default function Home() {
                         <TextField
                             id="filled-required"
                             placeholder="Masukkan Kategori..."
+                            style={{width: "98%"}}
                         />
                     </div>
                 </div>
