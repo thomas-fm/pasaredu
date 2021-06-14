@@ -3,7 +3,11 @@ import Head from 'next/head'
 
 export default function NavBar(){
     return (
-        <>
+        <>  
+            <Head>
+                <title>Pasaredu</title>
+                <link rel="icon" href="/pasaredu-logo.png"></link>
+            </Head>
             <div>
                 <div className="flex items-center">
                     <div className="flex items-center w-full 2xl:w-full md:mx-40 2xl:mx-40 ">
