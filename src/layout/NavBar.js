@@ -22,7 +22,7 @@ export default function NavBar(){
                     </div>
 
                     <div className="flex items-center justify-center 2xl:justify-end" style={{width:"100%"}}>
-                        <div className="flex mx-40 2xl:mx-40">
+                        <div className="flex mx-40 2xl:mx-20">
                             <ul className="flex space-x-10 2xl:space-x-10 w-full">
                                 <li><a href="/login" className="text-xs md:text-base 2xl:text-base font-extrabold shadow tracking-widest">LOGIN</a></li>
                                 <li><a href="/register/mentee" className="text-xs md:text-base 2xl:text-base font-extrabold shadow tracking-widest">SIGN UP</a></li>
