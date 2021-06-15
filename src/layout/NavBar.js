@@ -24,15 +24,15 @@ export default function NavBar(){
                     <div className="flex items-center justify-center 2xl:justify-end" style={{width:"100%"}}>
                         <div className="flex mx-40 2xl:mx-20">
                             <ul className="flex space-x-10 2xl:space-x-10 w-full">
-                                <li><a href="/login" className="text-xs md:text-base 2xl:text-base font-extrabold shadow tracking-widest">LOGIN</a></li>
-                                <li><a href="/register/mentee" className="text-xs md:text-base 2xl:text-base font-extrabold shadow tracking-widest">SIGN UP</a></li>
-                                <li><a href="/katalog" className="text-xs md:text-base 2xl:text-base font-extrabold shadow tracking-widest">TUTOR</a></li>
+                                <li><a href="/login" className="text-xs md:text-base 2xl:text-base font-bold shadow tracking-widest">LOGIN</a></li>
+                                <li><a href="/register/mentee" className="text-xs md:text-base 2xl:text-base font-bold shadow tracking-widest">SIGN UP</a></li>
+                                <li><a href="/katalog" className="text-xs md:text-base 2xl:text-base font-bold shadow tracking-widest">TUTOR</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="flex items-center w-full" style={{width: "30%"}}>
-                        <button  className="border-4 text-xs md:text-base 2xl:text-base shadow font-extrabold tracking-widest" style={{borderBottomColor: "gold", borderRightColor: "gold", borderTopColor: "black", borderLeftColor: "black", padding:"0px 6px"}}>
+                        <button  className="border-4 text-xs md:text-base 2xl:text-base shadow font-bold tracking-widest" style={{borderBottomColor: "gold", borderRightColor: "gold", borderTopColor: "black", borderLeftColor: "black", padding:"0px 6px"}}>
                                 <a href="/register/tutor">JADI TUTOR</a></button>
                     </div>
                 </div>
