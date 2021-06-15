@@ -5,8 +5,6 @@ import {createMuiTheme, makeStyles, ThemeProvider} from '@material-ui/core/style
 import { useRouter } from 'next/router'
 import Navbar from '../../src/layout/NavBar.js'
 
-import NavBar from '../../src/layout/NavBar'
-
 const GoogleIcon = (props) => {
     return (
     <Icon {...props}>

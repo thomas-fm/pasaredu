@@ -1,6 +1,5 @@
 import Navbar from '../src/layout/NavBar.js'
-
-
+import Footer from '../src/layout/Footer.js'
 
 export default function InfoTutor(){
     return (
@@ -54,7 +53,8 @@ export default function InfoTutor(){
                         </li>
                     </ul>    
                 </div>
-            </div>    
+            </div>
+            <Footer/>    
         </>
     )
 }

@@ -3,6 +3,7 @@ import { PlusOutlined } from '@ant-design/icons';
 import React, { useEffect, useState } from 'react'
 
 import NavBar from '../../src/layout/NavBar'
+import Footer from '../../src/layout/Footer.js'
 
 const RegisterTutor = () => {
     const layout = {
@@ -235,7 +236,7 @@ const RegisterTutor = () => {
                 </Form.Item>
                 </div>
             </div>
-            </Form>
+            </Form>  
         </div>
         </Content>
         </Layout>
