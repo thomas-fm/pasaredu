@@ -22,7 +22,7 @@ export default function Home() {
                         <form><input placeholder="Masukkan Kategori" type="text" style={{width: "98%", outline: "none"}}></input></form>
                     </div>
                 </div>
-                <div className="my-2 md:my-10 lg:my-10 2xl:my-10"></div>
+                <div className="my-2 md:my-8 lg:my-10 2xl:my-10"></div>
               </div>
             </div>   
           </div>
@@ -54,18 +54,6 @@ export default function Home() {
                   </button>
                 </li>
               </ul>
-            </div>
-          </div>
-          
-          <div className="my-10 h-[135px] 2xl:my-40 lg:my-40 md:my-20 md:h-[420px] lg:h-[612px] 2xl:h-[612px]">
-            <div className="bg-benefit" style={{width: "100%", height:"100%"}}>
-              <div className="flex md:flex lg:flex 2xl:flex">
-                <div className="p-0 mx-[120px] my-[160px] md:flex lg:flex 2xl:flex md:mx-[830px] md:my-[370px] lg:mx-[1280px] lg:my-[550px] 2xl:mx-[1280px] 2xl:my-[550px]">
-                  <button className="p-0 w-[150px] md:w-[250px] md:px-2 md:py-1 lg:py-2 2xl:py-2 lg:px-4 2xl:px-4 bg-yellow-400 border-4 border-yellow-400" style={{marginLeft: "10px", marginRight: "-100px"}}>
-                      <a href="/register/tutor" className="text-xs font-semibold lg:text-base 2xl:text-base md:text-base lg:font-bold 2xl:font-bold md:font-bold uppercase ">Gabung jadi Tutor</a>
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </main>
