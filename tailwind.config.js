@@ -23,7 +23,7 @@ module.exports = {
           "background-size" : "100%"
         },
         ".bg-benefit" : {
-          "background-image" : "url(/benefit.png)",
+          "background-image" : "url(/bg-benefit.png)",
           "background-size" : "100%"
         }
       };
