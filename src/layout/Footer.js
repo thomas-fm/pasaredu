@@ -4,7 +4,7 @@ export default function Footer(){
     return (
         <>
             <footer>
-                <div className="w-full h-full bg-yellow-400 mt-10 md:mt-40 2xl:mt-40">
+                <div className="w-full h-full mt-10 md:mt-40 2xl:mt-40" style={{backgroundColor: "gold"}}>
                     <div className="flex items-center">
                         <div className="flex md:mx-40 2xl:mx-40">
                             <div>
@@ -40,7 +40,7 @@ export default function Footer(){
                         </div>
 
                         <div className="md:my-20 2xl:my-20">
-                            <div className="md:mx-20 2xl:-mx-20 md:my-6 mx-2">
+                            <div className="md:-mx-10 2xl:-mx-20 md:my-6 mx-2">
                                 <h2 className="text-xs font-semibold md:text-base 2xl:text-base 2xl:font-bold md:font-bold">Find Us</h2>
                                 <div className="md:my-5 2xl:mt-10 my-2">
                                     <ul className="flex">
