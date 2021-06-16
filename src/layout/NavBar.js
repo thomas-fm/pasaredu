@@ -17,7 +17,7 @@ export default function NavBar(){
                                     src="/pasaredu-logo.png"
                                     style={{width: "80%" , height: "100%"}}>
                                 </img>
-                                </a>
+                            </a>
                         </div>
                     </div>
 

@@ -10,7 +10,7 @@ export default function Home() {
           <div className="items-center">
             <div className="bg-pasaredu"> 
               <div className="items-center flex flex-col">
-                <h1 className="my-1 text-sm font-thin text-white font-montserrat md:text-4xl lg:text-6xl lg:my-20 2xl:text-6xl text-center md:my-20 2xl:my-20 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
+                <h1 className="my-1 text-sm font-thin text-white font-montserrat md:text-2xl lg:text-6xl lg:my-20 2xl:text-6xl text-center md:my-20 2xl:my-20 font-extrabold tracking-widest">Selamat Datang di Pasaredu!</h1>
                 <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:-my-15 text-center font-semibold tracking-widest">Pasar daring yang memfasilitasi berbagai layanan</p>
                 <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:my-0 text-center font-semibold tracking-widest">edukasi dengan menghubungkan tutor dan murid</p>
                 <p className="text-xs text-white md:text-2xl 2xl:text-2xl 2xl:-my-0 text-center font-semibold tracking-widest">di seluruh Indonesia</p>
@@ -62,7 +62,7 @@ export default function Home() {
                 <h1 className="font-semibold text-white text-xs 2xl:font-bold md:font-bold md:text-2xl 2xl:text-2xl"><br></br>Kenapa harus menggunakan pasaredu</h1>
                 <ul>
                   <li><ul className="flex">
-                    <li><div className="flex mt-5 md:mt-20 2xl:mt-20">
+                    <li><div className="flex mt-5 md:mt-10 2xl:mt-20">
                       <img src="/harga-icon.png" style={{width: "6%", height: "6%"}}></img>
                       <p className="mx-2 md:mx-5 md:text-left 2xl:text-left 2xl:mx-5 text-xs font-thin md:text-base 2xl:text-base 2xl:font-semibold md:font-semibold text-white">Harga Terjangkau</p></div>
                     <div style={{width: "60%", marginTop: "20px"}}>
@@ -71,7 +71,7 @@ export default function Home() {
                       </p>
                     </div></li>
                     <li>
-                    <div className="-mx-5 md:-mx-40 flex mt-5 md:mt-20 2xl:mt-20">
+                    <div className="-mx-5 md:-mx-40 flex mt-5 md:mt-10 2xl:mt-20">
                       <img src="/proses-icon.png" style={{width: "3%", height: "3%"}}></img>
                       <p className="mx-2 font-thin md:mx-5 2xl:mx-5 text-xs 2xl:text-base md:text-base 2xl:font-semibold md:font-semibold text-white">Cepat dan Mudah</p></div>
                     <div className="-mx-5 md:-mx-40" style={{width: "52%", marginTop: "20px"}}>
@@ -102,7 +102,7 @@ export default function Home() {
                     </li>
                   </ul></li>
                 </ul>
-                <div className="2xl:my-20"><br></br></div>
+                <div className="2xl:my-20 md:my-5"><br></br></div>
               </div>
             </div>
             <div className="2xl:mx-40 2xl:-my-24">
@@ -116,6 +116,7 @@ export default function Home() {
             </div>   
           </div>
         </main>
+      <Footer/>
       </div>    
     </>
   )
