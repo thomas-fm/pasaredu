@@ -22,7 +22,7 @@ export default function Home() {
                         <form><input placeholder="Masukkan Kategori" type="text" style={{width: "98%", outline: "none"}}></input></form>
                     </div>
                 </div>
-                <div className="my-2 md:my-8 lg:my-10 2xl:my-10"></div>
+                <div className="my-2 md:my-10 lg:my-10 2xl:my-10"></div>
               </div>
             </div>   
           </div>
